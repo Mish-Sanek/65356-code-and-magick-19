@@ -182,8 +182,6 @@
 </template>
 
 <script type="text/javascript">
-  var CANVAS_WIDTH = 700;
-  var CANVAS_HEIGHT = 300;
   var fireballSize = 22;
   var wizardSpeed = 3;
   var wizardWidth = 70;
@@ -201,11 +199,11 @@
   }
 
   var getWizardX = function(width) {
-    return CANVAS_WIDTH / 2 - 35;
+    return (width / 2) - (wizardWidth / 2);
   }
 
   var getWizardY = function(height) {
-    return (CANVAS_HEIGHT / 2) -  (getWizardHeight() / 2);
+    return (height / 2) -  (getWizardHeight() / 2);
   }
 </script>
 
